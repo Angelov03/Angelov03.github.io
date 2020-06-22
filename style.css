@@ -1,0 +1,102 @@
+body{
+	background-image: url(file:///C:/bojan/programi/web%20dev/Bike-site/image-home.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: Roboto;
+}
+.heading-home{
+	text-align: center;
+	margin-top: 21%;
+	color: #f2f2f2;
+	font-size: 64px;
+	text-shadow: 6px 6px #474747;
+}
+h3{
+	/*color: #f2f2f2;*/
+	text-align: center;
+	background-image: url(file:///C:/bojan/programi/web%20dev/Bike-site/mountain-background.svg)!important;
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding-top: 70px;
+	font-size: 32px !important;
+	font-weight: 900 !important;
+}
+#Choose-Tours{
+	background-color:#eaedf2 /*#11862f*/ !important; 
+	padding-top: 100px; 
+	
+}
+
+#hiking{
+		border-radius: 9%;
+		margin-top: 15%;
+		padding: 10px;
+
+}
+.scale:hover{
+		-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	       
+
+}
+
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f2f2f2;
+  font-weight: 900;
+  font-size: 22px;
+  cursor: pointer;
+}
+.centered:hover {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #11862f;
+  font-weight: 900;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.centered-icon{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f2f2f2;
+  font-size: 66px;
+}
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
