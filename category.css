@@ -1,0 +1,40 @@
+
+ul li a {
+  font-size: 20px;
+}
+
+ul li a:hover {
+  color:#f2f2f2  !important;
+  border-bottom: 2px solid #11862f !important;
+}
+#currentCategoryId {
+	text-align: center;
+	font-size: 32px;
+	font-weight: 700;
+	color: #11862f;
+	margin-top: 7%;
+	background-image: url(file:///C:/bojan/programi/web%20dev/Bike-site/mountain-background.svg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding-top: 70px;
+}
+
+#currentDesription{
+	font-size: 22px;
+	margin-top: 6%;
+	margin-bottom: 6%;
+}
+span{
+	color: #11862f;
+	font-weight: 900;
+}
+
+#image1{
+	width: 100%;
+
+
+}
+#currentMap{
+	margin-top: 6%;
+	margin-bottom: 6%;
+}

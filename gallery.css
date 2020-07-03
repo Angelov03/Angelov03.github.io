@@ -1,0 +1,61 @@
+ul li a {
+  font-size: 20px;
+}
+
+ul li a:hover {
+  color:#f2f2f2  !important;
+  
+  border-bottom: 2px solid #11862f !important;
+}
+h3{
+	color: #11862f !important;
+	text-align: center;
+	background-image: url(file:///C:/bojan/programi/web%20dev/Bike-site/mountain-background.svg)!important;
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding-top: 70px;
+	font-size: 32px !important;
+	font-weight: 900 !important;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 20px;
+}
+
+.centered-icon{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f2f2f2;
+  font-size: 32px;
+}
+.scale:hover{
+  
+  -webkit-animation: scale-up-hor-center 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-hor-center 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-hor-center {
+  0% {
+    -webkit-transform: scaleX(0.4);
+            transform: scaleX(0.4);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+@keyframes scale-up-hor-center {
+  0% {
+    -webkit-transform: scaleX(0.4);
+            transform: scaleX(0.4);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
