@@ -1,46 +1,26 @@
-  $(function(){ 
-     var navMain = $(".navbar-collapse"); 
-     navMain.on("click", "a:not([data-toggle])", null, function () {
-         navMain.collapse('hide');
-     });
- });
+var slideIndex = 1;
+showSlides(slideIndex);
 
-  (function (){
-    for (const link of document.querySelectorAll('#navbarText>ul>li>a')) {
-        link.addEventListener('click',setActiveState);
-    }
-})()
-
-function setActiveState(){
-    for (const link of document.querySelectorAll('#navbarText>ul>li>a')) {
-       
-        link.parentElement.classList.remove("active");
-    }
-
-   
-    this.parentElement.classList.add("active");
+function plusSlides(n) {
+    showSlides(slideIndex += n);
 }
 
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
 
-let mainNavLinks = document.querySelectorAll("nav ul li a");
-let mainSections = document.querySelectorAll("main section");
-
-let lastId;
-let cur = [];
-
-window.addEventListener("scroll", event => {
-  let fromTop = window.scrollY;
-
-  mainNavLinks.forEach(link => {
-    let section = document.querySelector(link.hash);
-
-    if (
-      section.offsetTop <= fromTop &&
-      section.offsetTop + section.offsetHeight > fromTop
-    ) {
-      link.parentElement.classList.add("active");
-    } else {
-      link.parentElement.classList.remove("active");
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
     }
-  });
-});
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}
