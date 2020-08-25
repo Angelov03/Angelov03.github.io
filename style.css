@@ -140,27 +140,30 @@
   margin-right: auto;
   width: 50%;
 }
+.images-products{
+    padding: 20px;
+    width: 70% !important;
+    height: 70% !important;
+}
+.images-products:hover{
+    padding: 20px;
+    width: 70% !important;
+    height: 70% !important;
+    opacity: 0.5 !important;
+    color: black !important;
+}
+.text-products{
+    text-align: center !important;
+}
+}
+
 a:hover{
-  text-decoration-line: none !important;
+    
+    text-decoration: none !important;
 }
-.description{
-  text-align: center !important;
+.heading-products{
+    text-align: center !important;
+    font-weight: 700 !important;
 }
-h6{
-  font-size: 20px !important;
-}
-#About-WaterSystems4u{
-  color: #0b74e4 !important;
-  
-}
-.coolers{
-  width: 100% !important;
-  height: 100% !important;
-}
-.plumbs{
-     width: 100% !important;
-  height: 100% !important;
-}
-.text-intrix{
-  margin-top: 10% !important;
-}
+
+
